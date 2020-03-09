@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {},
+  "files": ["./src/index.ts", "./src/buttons.ts", "./src/music-visualizer.ts"],
+  "include": ["custom.d.ts"]
+}

@@ -1,0 +1,210 @@
+html,
+body,
+#root {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: "Poppins";
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  background-image: url(../assets/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body #mountains {
+  position: absolute;
+  height: 40vh;
+  bottom: -2px;
+  z-index: 3;
+}
+
+body #bear {
+  position: absolute;
+  height: 40vh;
+  left: 10vw;
+  bottom: 25px;
+  z-index: 3;
+}
+
+body footer {
+  height: 5vh;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  z-index: 4;
+  font-size: 0.8em;
+  color: #07000c;
+}
+
+body #start {
+  position: absolute;
+  z-index: 4;
+  font-size: 2.5rem;
+  color: #07000c;
+}
+
+body audio {
+  height: 0;
+  width: 0;
+}
+
+#music-visualizer {
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  display: none;
+}
+
+#music-visualizer .controlBar {
+  height: 15vh;
+  width: 90vw;
+  margin-left: 5vw;
+  top: 0px;
+  font-size: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#music-visualizer .controlBar input:hover {
+  -webkit-filter: drop-shadow(4px 4px 3px rgba(153, 169, 209, 0.9));
+          filter: drop-shadow(4px 4px 3px rgba(153, 169, 209, 0.9));
+}
+
+#music-visualizer .controlBar .time {
+  width: 15%;
+  text-align: right;
+}
+
+#music-visualizer .controlBar #buttons {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+#music-visualizer .controlBar #buttons img {
+  height: 4vh;
+}
+
+#music-visualizer .controlBar #buttons img:hover {
+  -webkit-filter: drop-shadow(4px 4px 3px rgba(153, 169, 209, 0.9));
+          filter: drop-shadow(4px 4px 3px rgba(153, 169, 209, 0.9));
+}
+
+#music-visualizer .controlBar .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#music-visualizer .controlBar .switch input:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+#music-visualizer .controlBar .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #99a9d1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#music-visualizer .controlBar .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#music-visualizer .controlBar input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#music-visualizer .controlBar input[type="range"] {
+  -webkit-appearance: none;
+  width: 20%;
+  background: transparent;
+}
+
+#music-visualizer .controlBar input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1vh;
+  background: #99a9d1;
+  border-radius: 3px;
+}
+
+#music-visualizer .controlBar input[type="range"]::-webkit-slider-thumb {
+  height: 3vh;
+  width: 3vh;
+  margin-top: -0.9vh;
+  border-radius: 25px;
+  background: white;
+  -webkit-appearance: none;
+  vertical-align: middle;
+}
+
+#music-visualizer .controlBar input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #99a9d1;
+}
+
+#music-visualizer .visualizer {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

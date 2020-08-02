@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Music visualizer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel=icon type=image/png href=./favicon.ico />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="unsupported">
+      <p>
+        Sorry, this resolution is currently unsupported, but I'm working on it
+        :)
+      </p>
+    </div>
+    <img id=mountains src=assets/mountains.svg alt=mountains /> <img id=bear
+    src=assets/bear.svg alt=bear />
+    <div id="start">
+      <p>Music visualizer created with HTML Canvas and Web Audio API</p>
+      <h2>Start</h2>
+    </div>
+    <div id="music-visualizer">
+      <div class="controlBar">
+        <div class="song"><p id="song">title</p></div>
+        <div class="time"><p id="time">time</p></div>
+        <div id="buttons">
+          <img id=previous src=assets/previous.svg alt=previous /> <img
+          id=playstop src=assets/play.svg alt=playstop /> <img id=next
+          src=assets/next.svg alt=next />
+          <input
+            id="volume"
+            type="range"
+            min="0"
+            max="1.0"
+            value="0.1"
+            step="0.01"
+          />
+          <img id=mute src=assets/volume.svg alt=mute />
+          <label class="switch">
+            <input id="toggle" type="checkbox" /> <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="visualizer">
+        <canvas id="canvas">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+      </div>
+    </div>
+    <footer><p>Created by Magdalena Sułkowska</p></footer>
+    <audio id="audio" preload="metadata">
+      <source src="music/Scott Holmes - Storybook.mp3" type=audio/mpeg />
+      Your browser does not support the audio element.
+    </audio>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

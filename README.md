@@ -1,5 +1,7 @@
 # Music Visualizer
 
+https://muszimuszla.github.io/musicVisualizer/
+
 Music visualizer stylized for the nothern lights, created withWeb Audio API.
 
 Before you start you will need some software tools installed
